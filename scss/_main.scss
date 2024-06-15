@@ -1,0 +1,105 @@
+@import "./variables";
+
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin: 100px 260px 175px;
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding: 65px 72px;
+        background: #F2F2F2;
+        font-size: 20px;
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: $primary-color;
+            gap: 15px;
+            .subtitle{
+                letter-spacing: 6px;
+                text-transform: uppercase;
+            }
+            h2{
+                font-size: 45px;
+                font-weight: $bold-font-weight;
+                text-transform: capitalize;
+            }
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 25px;
+            p{
+                color: $link-color;
+            }
+            .points{
+                display: flex;
+                gap: 30px;
+                list-style: url('../images/circle-in-circle.svg');
+                li{
+                    color: #757575;
+                }
+            }
+        }
+    }
+    .video{
+        background-image: url('../images/intro-video.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 420px;
+        padding: 148px 133.5px;
+    }
+    .details, .video{
+        border-radius: 5px;
+    }
+}
+.property{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F1EF;
+    font-size: 20px;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 46px;
+        margin: 188px 260px 0;
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: $primary-color;
+            gap: 15px;
+            .subtitle{
+                letter-spacing: 6px;
+                text-transform: uppercase;
+            }
+            h2{
+                font-size: 45px;
+                font-weight: $bold-font-weight;
+                text-transform: capitalize;
+            }
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            column-gap: 38px;
+            row-gap: 40px;
+        }
+        .cards > div{
+            display: flex;
+            padding: 47px 39px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

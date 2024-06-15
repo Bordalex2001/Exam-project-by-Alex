@@ -1,0 +1,55 @@
+@import "./variables";
+
+header{
+    display: flex;
+    margin: 99px 260px 0;
+    padding: 44px 45px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menu-bar{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 60px;
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                font-size: 20px;
+                gap: 20px;
+                li > a{
+                    text-decoration: none;
+                    color: $list-items-color;
+                }
+                .dropdown > .dropdown-menu{
+                    display: none;
+                    padding: 10px;
+                    white-space: nowrap;
+                    list-style: none;
+                }
+                .dropdown:hover > .dropdown-menu{
+                    display: block;
+                }
+            }
+            button{
+                display: flex;
+                padding: 23px 61px;
+                gap: 10px;
+                border-radius: 5px;
+                background: $primary-color;
+                font-family: $primary-font;
+                font-weight: $medium-font-weight;
+                color: #fff;
+                font-size: 20px;
+                border-style: none;
+            }
+        }
+    }
+}
